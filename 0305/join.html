@@ -1,0 +1,65 @@
+<body>
+  <form>
+    <fieldset style="width: 400">
+      <legend>회원가입</legend>
+      <table>
+        <tr>
+          <td align="center"><label for="id">사용자 ID</label></td>
+          <td><input type="text" name="id" id="id" /></td>
+        </tr>
+        <tr>
+          <td align="center"><label for="password">비밀번호</label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">비밀번호 확인</label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td align="center"><label for="name">이름</label></td>
+          <td><input type="text" name="name" id="name" /></td>
+        </tr>
+        <tr>
+          <td align="center">성별</td>
+          <!-- radio : name속성 동일하게 동시에 여러개 선택 금지 -->
+          <td >
+            <input type="radio" name="gender" id="male" value="m" />
+            <label for="male">남자</label>
+            <input type="radio" name="gender" id="female" value="f" />
+            <label for="female">여자</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">취미</td>
+          <td>
+            <input type="checkbox" name="habi" id="Soccer" />
+            <label for="Soccer">축구</label>
+            <input type="checkbox" name="habi" id="Baseball" />
+            <label for="Baseball">야구</label>
+            <input type="checkbox" name="habi" id="Volleyball" />
+            <label for="Volleyball">배구</label>
+            <input type="checkbox" name="habi" id="Basketball" />
+            <label for="Basketball">농구</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><label for="email">email</label></td>
+          <td><input type="email" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td align="center">역할</td>
+          <td>
+            <!-- 여려개 항목 중 하나만 선택 -->
+            <select name="" id="">
+              <option value="">ADMIN</option>
+              <option value="">관리자</option>
+              <option value="">일반회원</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="확인" />
+      <input type="reset" value="다시쓰기" />
+    </fieldset>
+  </form>
+</body>
