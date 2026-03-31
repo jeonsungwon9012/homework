@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS3 Position Property</title>
+    <style>
+      .box{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box:nth-child(1){
+        background-color: red;
+        top: 10px;
+        left: 10px;
+        /*추가*/
+        z-index: 100;
+      }
+      .box:nth-child(2){
+        background-color: green;
+        top: 50px;
+        left: 50px;
+        /*추가*/
+        z-index: 10;
+      }
+      .box:nth-child(3){
+        background-color: blue;
+        top: 90px;
+        left: 90px;
+        /*추가*/
+        z-index: 1;
+      }
+      body>div{
+        width: 400px;
+        height: 100px;
+        border: 3px solid black;
+        position: relative;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 추가 -->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+  </body>
+</html>
